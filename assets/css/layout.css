@@ -1,3 +1,6 @@
+main {
+  margin-bottom: 60px;
+}
 
 .gallery {
   display: flex;
@@ -34,6 +37,9 @@
   padding: 10px;
   box-shadow: var(--shadow);
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .card img {
@@ -57,14 +63,18 @@
 }
 
 .bottom-nav {
-  position: sticky;
+  position: fixed;
   bottom: 0;
-  background: #f8eaea;
+  left: 0;
+  width: 100%;
+  background: var(--bg);
   display: flex;
   justify-content: space-around;
-  padding-top: 10px;
-  margin-top: 16px;
+  padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+  z-index: 100;
+  border-top: 1px solid #eee;
 }
+
 
 .nav-icon {
   width: 34px;

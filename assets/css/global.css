@@ -7,6 +7,11 @@
   --card: #fff;
   --radius: 14px;
   --shadow: 0 6px 18px rgba(0,0,0,0.08);
+
+  --space-1: 0.8rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
 }
 
 * {
@@ -17,11 +22,10 @@
 
 body {
   font-family: "Inter", system-ui, sans-serif;
-  background: var(--bg);
   color: var(--text);
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: var(--space-1)
 }
 
 .btn {
@@ -32,13 +36,21 @@ body {
   font-size: 11px;
   padding: 6px 10px;
   cursor: pointer;
+  margin-top: auto;
+  display: inline-block;
+
 }
 
 .phone {
   width: 100%;
   min-height: 100dvh;
-  background: #f8eaea;
-  padding: 18px 16px 28px;
+  background: var(--bg);
+  padding: var(--space-1);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Desktop: simula celular */
@@ -50,12 +62,15 @@ body {
     min-height: 100vh;
   }
 
-  .phone {
+  .phone .bottom-nav {
     width: 390px;
-    min-height: 780px;
-    border-radius: 28px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
   }
+
+
 }
 
 
