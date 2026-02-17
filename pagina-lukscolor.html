@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalhe da Tinta</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/pages/detalhe.css" />
+</head>
+<body>
+  <div class="phone">
+
+    <header class="header header--produto">
+      <div class="header-top">
+        <button class="back">←</button>
+        <a href="index.html"><span class="header-title">Catálogo de Tintas</span></a>
+      </div>
+    </header>
+
+    <main class="produto">
+      <div class="produto-galeria">
+        <img id="imagemPrincipal" src="img/tintas/lukscolor-branco.png" alt="Tinta" />
+
+        <div class="thumbs">
+          <img src="img/tintas/lukscolor-branco.png" class="thumb active" />
+          <img src="img/tintas/lukscolor-areia.png" class="thumb" />
+          <img src="img/tintas/lukscolor-cinza.png" class="thumb" />
+          <img src="img/tintas/lukscolor-azul.png" class="thumb" />
+        </div>
+      </div>
+
+      <section class="produto-info">
+        <h1 class="produto-nome">Lukscolor Tradicional Acrílico Premium</h1>
+        <p class="produto-desc">Exterior / interior · Lavável · Baixo odor</p>
+
+        <div class="cores">
+          <span class="cor" data-img="img/tintas/lukscolor-branco.png" style="background:#f1f1f1"></span>
+          <span class="cor" data-img="img/tintas/lukscolor-areia.png" style="background:#d9c7a3"></span>
+          <span class="cor" data-img="img/tintas/lukscolor-cinza.png" style="background:#8a8a8a"></span>
+          <span class="cor" data-img="img/tintas/lukscolor-azul.png" style="background:#4a6fa5"></span>
+        </div>
+
+        <button class="btn orcamento">Orçamento</button>
+      </section>
+
+      <section class="beneficios">
+        <h2>Benefícios</h2>
+        <ul>
+          <li>Alta cobertura</li>
+          <li>Anti-mofo</li>
+          <li>Lavável</li>
+          <li>Baixo odor</li>
+        </ul>
+      </section>
+
+      <section class="mais-info">
+        <h2>Mais Informações</h2>
+        <p>Indicado para ambientes internos e externos. Excelente rendimento e durabilidade.</p>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <div class="nav-icon">☰</div>
+      <div class="nav-icon">🏠</div>
+      <div class="nav-icon">👤</div>
+    </nav>
+
+  </div>
+
+<script src="assets/script/pagina-lukscolor.js"></script>
+</body>
+</html>

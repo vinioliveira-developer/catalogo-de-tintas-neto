@@ -1,0 +1,62 @@
+:root {
+  --bg: #f3f3f3;
+  --primary: #1f2a44;
+  --accent: #d97706;
+  --text: #333;
+  --muted: #777;
+  --card: #fff;
+  --radius: 14px;
+  --shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-size: 11px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.phone {
+  width: 100%;
+  min-height: 100dvh;
+  background: #f8eaea;
+  padding: 18px 16px 28px;
+}
+
+/* Desktop: simula celular */
+@media (min-width: 600px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .phone {
+    width: 390px;
+    min-height: 780px;
+    border-radius: 28px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  }
+}
+
+
+
